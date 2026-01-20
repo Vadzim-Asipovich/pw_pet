@@ -1,14 +1,14 @@
 {
-  "extends": "./tsconfig",
+  "extends": "../tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
     "types": ["node", "playwright"],
     "noEmit": true,
     "isolatedModules": true,
-    "resolveJsonModule": true,
+    "resolveJsonModule": true
   },
   "include": [
-    "tests/**/*.ts",
-    "config.ts"
+    "**/*.ts",
+    "../config.ts"
   ]
 }
