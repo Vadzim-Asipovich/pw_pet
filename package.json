@@ -2,7 +2,12 @@
   "name": "pw_pet",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Vadzim-Asipovich/pw_pet.git"
@@ -18,5 +23,8 @@
   "devDependencies": {
     "@playwright/test": "^1.57.0",
     "@types/node": "^25.0.9"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
   }
 }
