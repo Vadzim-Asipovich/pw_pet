@@ -1,0 +1,22 @@
+{
+  "name": "pw_pet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vadzim-Asipovich/pw_pet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vadzim-Asipovich/pw_pet/issues"
+  },
+  "homepage": "https://github.com/Vadzim-Asipovich/pw_pet#readme",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.9"
+  }
+}
