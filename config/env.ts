@@ -11,7 +11,6 @@ function getEnv(name: string): string {
 }
 
 export default {
-  envName: getEnv('ENV'),
   baseUrl: getEnv('BASE_URL'),
   username: getEnv('SAUCE_USERNAME'),
   password: getEnv('SAUCE_PASSWORD'),

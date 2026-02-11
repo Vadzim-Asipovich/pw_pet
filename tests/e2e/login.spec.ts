@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
-import env from '../config/env';
-import { LoginPage } from '../src/pages/login-page';
+import env from '../../config/env';
+import { LoginPage } from '../../src/pages/login-page';
 
-test('has title', async ({ page }) => {
+test('can log in', async ({ page }) => {
   const loginPage = new LoginPage(page);
   await loginPage.goto();
   await loginPage.logIn(env.username, env.password);

@@ -15,7 +15,6 @@ export class LoginPage {
   }
 
   async goto() {
-    console.log(env.baseUrl);
     await this.page.goto(env.baseUrl);
   }
 
