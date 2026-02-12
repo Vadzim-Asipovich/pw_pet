@@ -15,7 +15,7 @@ export class LoginPage {
   }
 
   async goto() {
-    await this.page.goto(env.baseUrl);
+    await this.page.goto('/');
   }
 
   async logIn(username: string, password: string) {

@@ -11,7 +11,7 @@ export class InventoryPage {
   }
 
   async goto() {
-    await this.page.goto(env.baseUrl+'/inventory.html');
+    await this.page.goto('/inventory.html');
   }
 
 }

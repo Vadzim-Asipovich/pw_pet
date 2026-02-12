@@ -3,10 +3,7 @@ import dotenv from 'dotenv';
 
 const env = process.env.ENV;
 
-dotenv.config({
-  path: `.${env}`,
-});
-
+dotenv.config();
 
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -32,9 +29,15 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+     // Setup project
+    { name: 'setup', testMatch: /.*\.setup\.ts/ },
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: { 
+        ...devices['Desktop Chrome'],
+        storageState: 'playwright/.auth/user.json',
+       },
+      dependencies: ['setup'],
     },
 
     // {
