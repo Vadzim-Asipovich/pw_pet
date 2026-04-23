@@ -1,5 +1,4 @@
 import { type Locator, type Page } from '@playwright/test';
-import env from '../../config/env';
 
 export class InventoryPage {
   readonly page: Page;
